@@ -1,0 +1,10 @@
+<div class="title">
+  <ul>
+    <div class = "interesting_title">
+    {% for object in mode %}
+
+        <li><a href="{% url 'article_detail' pk=object.pk slug='工運史' %}">{{object.job}}</a></li>
+
+    {% endfor %}
+  </ul>
+</div>

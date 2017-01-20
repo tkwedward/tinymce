@@ -1,0 +1,138 @@
+@keyframes example {
+    0%   {background: url("http://freshwallpapers.net/download/9136/1280x768/download/beautiful-fair-girl.jpg");}
+    50%  {background: url("http://tripschannel.com/wp-content/uploads/2016/03/Zhangjiajie-National-Forest-Park-China.jpg");}
+    100% {background: url("http://cdn.wallpapersafari.com/12/59/on5GmO.jpg");}
+}
+
+
+.background{
+  animation: example 12s infinite;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.nav-bar {
+  height: 100px;
+  width: 100%;
+  background: blue;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  .logo{
+    float: left;
+  }
+
+  ul{
+    list-style: none;
+    margin-left: 37%;
+      li{
+        float: left;
+        margin-left: 20px;
+      }
+    }
+}
+
+.content{
+  clear: left;
+  position: absolute;
+  top: 94px;
+  left: 0px;
+  width: 100%;
+
+
+  .banner{
+    background: white;
+    height: 200px;
+    .banner-title{
+      text-align: center;
+      position: relative;
+      top: 40px;
+    }
+    .banner-buttons{
+      margin-top:25px;
+    }
+    a{
+      display: inline-block;
+      width: 150px;
+      background: pink;
+      margin: 0px 20px;
+      padding: 20px;
+      text-decoration: none;
+      color: white;
+
+    }
+    a:nth-of-type(1){
+      background: rgb(233, 102, 86);
+    }
+    a:nth-of-type(2){
+      background: rgb(6, 144, 89);
+    }
+    a:nth-of-type(3){
+      background: rgb(254, 224, 0);
+      color: black;
+    }
+  }
+
+  .news{
+    position: absolute;
+    top: 200px;
+    left: 0px;
+    width: 100%;
+    height: 560px;
+    background: pink;
+    .news-wrapper{
+      position: relative;
+      top: 30px;
+      overflow-x: hidden;
+
+      .news-title{
+        width: 200px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .news-slideshow{
+        width: 5000px;
+        .news-box-holder{
+          height: 440px;
+          background: gold;
+          float: left;
+          width: 1150px;
+          margin: 20px 60px;
+          .news-box{
+            height: 400px;
+            background: red;
+            float: left;
+            width: 23.2%;
+            margin: 20px 0px 20px 16px;
+            .news-box-image{
+
+            }
+            .news-box-title{
+
+            }
+            .news-box-title::after{
+              display: block;
+              content: " ";
+              width: 100px;
+              margin: 0 auto;
+              border-bottom: 2px solid rgb(28, 166, 111)
+            }
+
+            .news-box-content{
+
+            }
+
+          }//news-box
+        }//news-box-holder
+      }//news-slideshow
+    }//news-wrapper
+  }//.news
+
+}

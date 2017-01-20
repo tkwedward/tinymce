@@ -1,0 +1,457 @@
+@media screen and (min-width: 501px) {
+  [data-role='collapsible'] {
+    font-size: 15px; }
+    [data-role='collapsible'] h2 {
+      background-color: #ededed;
+      border-color: #ddd;
+      color: #333;
+      text-shadow: 0 1px 0 #f3f3f3;
+      border-right-width: 1px;
+      border-left-width: 1px;
+      padding: 7px 0px;
+      border-radius: 25px; }
+    [data-role='collapsible'] h2.close::before {
+      content: "";
+      display: block;
+      background: url("https://www.kickz.com/css/images/icon_zoom_plus.png") no-repeat;
+      width: 20px;
+      height: 20px;
+      float: left;
+      margin: 7px 15px 0 10px; }
+    [data-role='collapsible'] h2.open::before {
+      content: "";
+      display: block;
+      background: url("https://www.kickz.com/css/images/icon_zoom_minus.png") no-repeat;
+      width: 20px;
+      height: 20px;
+      float: left;
+      margin: 7px 15px 0 10px; }
+    [data-role='collapsible'] p.close {
+      display: none; }
+    [data-role='collapsible'] p.open {
+      position: relative;
+      left: 35px;
+      font-size: 20px; }
+
+  body {
+    background: #c8d8d4; }
+
+  .control_bar, #close {
+    display: none; }
+
+  .banner .icon {
+    position: absolute;
+    right: 50px;
+    top: 75px; }
+    .banner .icon .search .close {
+      display: none; }
+    .banner .icon .search input {
+      height: 40px;
+      font-size: 20px;
+      position: relative;
+      bottom: 18px; }
+    .banner .icon img {
+      height: 50px; }
+    .banner .icon img:not(:first-child):hover {
+      width: 60px;
+      height: auto; }
+
+  .top_navbar {
+    position: absolute;
+    top: 130px;
+    left: 20px;
+    width: 100%;
+    z-index: 1; }
+    .top_navbar li {
+      float: left;
+      margin-right: 30px;
+      list-style: none;
+      padding: 20px 20px 10px 0px;
+      font-size: 20px; }
+      .top_navbar li a {
+        display: block;
+        max-width: 120px;
+        margin-left: auto;
+        margin-right: auto;
+        color: white; }
+      .top_navbar li a:link {
+        text-decoration: none; }
+    .top_navbar li:last-child {
+      clear: right; }
+    .top_navbar .desktop_nav li {
+      max-width: 50px; }
+    .top_navbar .desktop_nav .accordian {
+      background-color: pink;
+      width: 120px;
+      display: inline-block;
+      z-index: 1; }
+    .top_navbar .desktop_nav .accordian.close {
+      display: none; }
+    .top_navbar .desktop_nav .accordian.open {
+      margin-top: 12px;
+      position: relative;
+      right: 5px; }
+      .top_navbar .desktop_nav .accordian.open a {
+        margin-top: 15px;
+        height: 30px;
+        padding-right: 10px;
+        padding-left: 5px;
+        padding-bottom: 10px; }
+      .top_navbar .desktop_nav .accordian.open a:not(:last-child) {
+        border-bottom: 2px solid; }
+
+  .part_A_nav, .part_B_nav, .part_C_nav {
+    position: relative; }
+    .part_A_nav #part_A_navbar_one, .part_A_nav #part_B_navbar_one, .part_A_nav #part_C_navbar_one, .part_B_nav #part_A_navbar_one, .part_B_nav #part_B_navbar_one, .part_B_nav #part_C_navbar_one, .part_C_nav #part_A_navbar_one, .part_C_nav #part_B_navbar_one, .part_C_nav #part_C_navbar_one {
+      clear: left; }
+    .part_A_nav ul, .part_B_nav ul, .part_C_nav ul {
+      list-style: none; }
+      .part_A_nav ul .highlight, .part_B_nav ul .highlight, .part_C_nav ul .highlight {
+        background: pink; }
+      .part_A_nav ul li, .part_B_nav ul li, .part_C_nav ul li {
+        float: left;
+        max-width: 150px;
+        margin-bottom: 20px;
+        padding: 10px 20px;
+        margin-right: 20px; }
+        .part_A_nav ul li a, .part_B_nav ul li a, .part_C_nav ul li a {
+          text-align: center; }
+        .part_A_nav ul li a:link, .part_B_nav ul li a:link, .part_C_nav ul li a:link {
+          text-decoration: none; }
+      .part_A_nav ul li:last-child, .part_B_nav ul li:last-child, .part_C_nav ul li:last-child {
+        clear: right;
+        border-right: none; }
+
+  .banner {
+    background: black;
+    height: 200px;
+    color: white;
+    font-family: 'cwTeXYen', sans-serif;
+    font-size: 60px; }
+
+  .banner_title {
+    position: relative;
+    left: 50px;
+    top: 50px; }
+
+  .page_A_container_of_four_parts, .pages {
+    clear: left;
+    position: relative;
+    left: 50px; }
+
+  form, .pages {
+    clear: left;
+    position: relative;
+    width: 90%; }
+    form label, .pages label {
+      display: block;
+      font-size: 20px;
+      padding: 10px; }
+    form label:nth-child(even), .pages label:nth-child(even) {
+      background: #f6f6f6; }
+    form input, .pages input {
+      float: right;
+      position: relative;
+      top: 25%;
+      border-radius: 10px; }
+    form input:checked, .pages input:checked {
+      background: blue; }
+
+  .four_one_eight_submit {
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px; }
+
+  .part_A_page_2 {
+    clear: left; }
+
+  .part_A_page_3 {
+    width: 91%; }
+
+  .part_C_box {
+    font-size: 25px;
+    margin: 15px; }
+    .part_C_box button {
+      background-color: #4CAF50;
+      /* Green */
+      border: none;
+      color: white;
+      padding: 5px 15px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      float: right;
+      margin: 0px 10px; }
+
+  .content-wrapper {
+    z-index: 0; }
+
+  .main {
+    background: white;
+    height: 110px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10; }
+    .main .nav_main {
+      background: #313131;
+      position: fixed;
+      width: 80%;
+      z-index: 30;
+      height: 110px;
+      margin: 0 auto;
+      left: 0;
+      right: 0; }
+      .main .nav_main ul {
+        list-style: none;
+        position: relative;
+        top: -16px; }
+        .main .nav_main ul li {
+          cursor: pointer;
+          float: left;
+          height: 90px;
+          margin: 0;
+          overflow: visible;
+          position: relative;
+          width: 14.28571%;
+          text-align: center;
+          padding-top: 15px; }
+          .main .nav_main ul li .icon {
+            color: white;
+            font-size: 50px; }
+          .main .nav_main ul li .icon-fire {
+            color: red; }
+          .main .nav_main ul li .icon-music {
+            color: gold; }
+          .main .nav_main ul li .icon-book {
+            color: green; }
+          .main .nav_main ul li .icon-heart {
+            color: pink; }
+          .main .nav_main ul li .title {
+            margin-top: 10px;
+            color: white;
+            padding-bottom: 7px; }
+        .main .nav_main ul li.music {
+          border-bottom: solid gold 5px;
+          transition: 0.5s; }
+        .main .nav_main ul li.fire {
+          border-bottom: solid red 5px;
+          transition: 0.5s; }
+        .main .nav_main ul li.book {
+          border-bottom: solid green 5px;
+          transition: 0.5s; }
+        .main .nav_main ul li.heart {
+          border-bottom: solid pink 5px;
+          transition: 0.5s; }
+        .main .nav_main ul li.music:hover {
+          background-color: gold;
+          transition: 0.5s; }
+          .main .nav_main ul li.music:hover .icon {
+            color: white; }
+        .main .nav_main ul li.fire:hover {
+          background-color: red; }
+          .main .nav_main ul li.fire:hover .icon {
+            color: white; }
+        .main .nav_main ul li.book:hover {
+          background-color: green; }
+          .main .nav_main ul li.book:hover .icon {
+            color: white; }
+        .main .nav_main ul li.heart:hover {
+          background-color: pink; }
+          .main .nav_main ul li.heart:hover .icon {
+            color: white; }
+
+  .content {
+    display: block;
+    width: 81%;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+    z-index: 0;
+    position: relative;
+    top: 103px;
+    height: 2000px;
+    overflow-x: hidden; }
+    .content .mosaic-section {
+      float: left;
+      width: 63%;
+      height: 651px;
+      background: #AAA;
+      padding: 10px; }
+      .content .mosaic-section .top {
+        width: 100%;
+        height: 388px;
+        background: #CCC;
+        margin-bottom: 1.5%; }
+      .content .mosaic-section .bottom-left {
+        width: 49%;
+        height: 250px;
+        background: #CCC;
+        float: left;
+        margin-right: 2%; }
+      .content .mosaic-section .bottom-right {
+        width: 49%;
+        height: 250px;
+        background: #DCC;
+        float: left; }
+    .content .right-banner {
+      min-height: 100px;
+      background: #BBB;
+      padding: 10px;
+      margin-left: 65.5%; }
+      .content .right-banner .right-banner-box {
+        height: 212px;
+        background: blue;
+        margin-bottom: 5px;
+        z-index: 100; }
+    .content .slider {
+      width: 5000px;
+      height: 200px; }
+      .content .slider .button {
+        opacity: .5; }
+      .content .slider .button:hover {
+        opacity: 1; }
+      .content .slider .right-button {
+        position: absolute;
+        z-index: 2;
+        top: 815px;
+        right: 20px; }
+      .content .slider .left-button {
+        position: absolute;
+        z-index: 2;
+        top: 815px;
+        left: 20px; }
+      .content .slider ul {
+        list-style: none; }
+        .content .slider ul .slider-ul {
+          position: relative;
+          left: -210px;
+          margin: 0px;
+          padding: 0px;
+          width: 9999px;
+          padding-bottom: 10px; }
+      .content .slider .slider-ul li {
+        float: left;
+        width: 200px;
+        padding: 0px;
+        height: 250px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 5px;
+        margin-right: 5px; }
+      .content .slider .slider-box {
+        height: 300px;
+        width: 220px;
+        float: left;
+        background: pink;
+        position: relative;
+        right: 23px;
+        margin-right: 10px;
+        transition: 0.5s; }
+        .content .slider .slider-box .image {
+          width: 180px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto; }
+        .content .slider .slider-box img {
+          margin-top: -30px;
+          width: 180px;
+          z-index: 10; }
+      .content .slider li.big-one {
+        height: 315px;
+        width: 277.2px;
+        background: gold; }
+        .content .slider li.big-one .image {
+          width: 230px; }
+        .content .slider li.big-one img {
+          width: 230px;
+          transition: 0.5s; }
+    .content .bottom-banner {
+      width: 200px;
+      height: 250px;
+      background: red;
+      clear: both;
+      margin-top: 250px;
+      margin-left: 18px; }
+      .content .bottom-banner .banner-content {
+        position: relative;
+        top: 100px;
+        height: 100px;
+        background: #BBB; }
+  @keyframes mymove {
+    0% {
+      margin-top: 250px; }
+    50% {
+      margin-top: 255px; }
+    100% {
+      margin-top: 250px; } }
+    .content .bottom-banner:hover {
+      animation-name: mymove;
+      animation-duration: 0.5s; }
+      .content .bottom-banner:hover .banner-content {
+        position: relative;
+        top: 100px;
+        height: 100px;
+        background: #BBB; }
+
+  #carousel_inner {
+    float: left;
+    /* important for inline positioning */
+    width: 630px;
+    /* important (this width = width of list item(including margin) * items shown */
+    overflow: hidden;
+    /* important (hide the items outside the div) */
+    /* non-important styling bellow */
+    background: #F0F0F0; }
+
+  #carousel_ul {
+    position: relative;
+    left: -210px;
+    /* important (this should be negative number of list items width(including margin) */
+    list-style-type: none;
+    /* removing the default styling for unordered list items */
+    margin: 0px;
+    padding: 0px;
+    width: 9999px;
+    /* important */
+    /* non-important styling bellow */
+    padding-bottom: 10px; }
+
+  #carousel_ul li {
+    float: left;
+    /* important for inline positioning of the list items */
+    width: 200px;
+    /* fixed width, important */
+    /* just styling bellow*/
+    padding: 0px;
+    height: 110px;
+    background: #000000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px; }
+
+  #carousel_ul li img {
+    .margin-bottom: -4px;
+    /* IE is making a 4px gap bellow an image inside of an anchor (<a href...>) so this is to fix that*/
+    /* styling */
+    cursor: pointer;
+    cursor: hand;
+    border: 0px; }
+
+  #left_scroll, #right_scroll {
+    float: left;
+    height: 130px;
+    width: 15px;
+    background: #C0C0C0; }
+
+  #left_scroll img, #right_scroll img {
+    /*styling*/
+    cursor: pointer;
+    cursor: hand; } }
+
+/*# sourceMappingURL=desktop.css.map */

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% load static %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% include "script.html" %}
+
+<link rel="stylesheet" href="{% static 'css/theme.css' %}">
+
+
+</head>
+
+<body>
+
+<div id = "mobile_version">
+  <div data-role="part" id = "part2">
+    {% include "header.html" %}
+
+<div data-role="content" class="part_B" data-theme="e">
+    <div class="part_B_nav" data-role="navbar" data-theme="c">
+      <ul>
+        <li id="part_B_navbar_one"><a href="#">工會功能</a></li>
+        <li id="part_B_navbar_two"><a href="#">行政程式及法律保護</a></li>
+        <li id="part_B_navbar_three"><a href="#"> 譯文</a></li>
+        <li id="part_B_navbar_four"><a href="#">打擊工會手段</a></li>
+      </ul>
+    </div>
+
+  <div class="pages">
+    <div class="part_B_part_1 part_B_navbar_one part_B_moon part_B_box">
+      第一頁：工會是什麼，工會有咩用（附本地外地報導全集）
+    </div>  <!-- part_B_part_1 -->
+
+    <div class="part_B_part_2 part_B_navbar_two part_B_moon part_B_box">
+      第二頁：行政程式及法律保護
+    </div>  <!-- part_B_part_2 -->
+
+    <div class="part_B_part_3 part_B_moon part_B_navbar_three part_B_box">
+      第三頁：IWW One Big Union 譯文
+    </div>  <!-- part_B_part_3 -->
+
+    <div class="part_B_part_4 part_B_navbar_four part_B_moon part_B_box">
+      第四頁：政府商界打擊工會有幾不擇手段（附抹黑全集，工聯會全集
+    </div>  <!-- part_B_part_4 -->
+  </div> <!-- end of pages -->
+</div><!-- end of content -->
+
+
+
+  </div>
+</div><!-- mobile version -->
+<script src="{% static 'js/open_work.js' %}"> </script>
+</body>
+
+</html>

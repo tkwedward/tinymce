@@ -1,0 +1,65 @@
+{% include "banner.html" %}
+
+
+
+<div data-role="panel" data-display="reveal" id="myPanel">
+  <ul class="top_navbar">
+    <div class="desktop_nav">
+      <li class="accordian_down open">
+        <a href="{% url 'index_page' %}">首頁</a>
+      </li>
+
+      <li class="accordian_down close">
+          <a href="">頁面</a>
+          <div class="accordian close">
+            <a href="">真是夠了</a>
+            <a href="">噢啦噢啦</a>
+            <a href="">瘋狂鑽石</a>
+            <a href="">天馬流星拳</a>
+          </div>
+      </li>
+
+      <li class="accordian_down close">
+          <a href="">頁面</a>
+          <div class="accordian close">
+            <a href="">真是夠了</a>
+            <a href="">噢啦噢啦</a>
+            <a href="">瘋狂鑽石</a>
+            <a href="">天馬流星拳</a>
+          </div>
+      </li>
+    </div>
+
+    <li id="index_page" class="accordian_down close">
+      <a href="{% url 'index_page' %}">勞資糾紛</a>
+    </li>
+
+    <li id="form_union" class="accordian_down close">
+      <a href="{% url 'form_union' %}">組建工會</a>
+    </li>
+    <!-- <li id="form_union">
+      <a href="#page2">組建工會</a>
+    </li> -->
+
+    <li id="claim" class="accordian_down close">
+      <a href="{% url 'claim' %}">工傷索償</a>
+    </li>
+
+    <li id="labour_history" class="accordian_down close">
+      <a href="{% url 'labour_law' %}">勞法歷史故事</a>
+    </li>
+
+    <li id="close" >
+      <a href="#my-header" data-rel="close">Close panel</a>
+    </li>
+  </ul>
+
+</div><!-- /panel -->
+
+<!-- <div class="control_bar">
+  <a href="#myPanel" class="ui-btn ui-icon-home ui-btn-inline">open</a>
+  <span class="title">
+    {{ info }} moon
+  </span>
+</div> -->
+<!-- /control_bar -->

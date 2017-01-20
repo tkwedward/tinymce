@@ -1,0 +1,75 @@
+{% include "script.html" %}
+<div id='loading'></div>
+
+<div data-role="page">
+    {% include "header.html" %}
+
+<div class="control_bar">
+  <a href="#myPanel" class="ui-btn ui-btn-inline">Open</a>
+  <span class="title"> 工傷索償 </span>
+</div>
+
+<div data-role="content" class="part_C" data-theme="e">
+    <div class="part_C_nav" data-role="navbar" data-theme="c">
+    <ul>
+      <li id="part_C_navbar_one" class="highlight"><a href="#" class=" ui-btn-active">你是？</a></li>
+      <li id="part_C_navbar_two"><a href="#">追討流程圖</a></li>
+      <li id="part_C_navbar_three"><a href="#">受害者故事</a></li>
+    </ul>
+  </div><!-- /navbar -->
+
+  <div class="pages part_C_box">
+    <div class="part_C_page_1 part_C_moon part_C_navbar_one">
+      <div class="part_C_q1 part_C_box">
+        1. 你是工傷者還是工傷者家屬？
+          <button class="yes"> 工傷者 </button>
+          <button class = "no"> 工傷者家屬 </button>
+      </div>
+    </div> <!-- part_C_page_1-->
+
+    <div class="part_C_q2 part_C_box">
+
+    </div> <!-- part_C_q2 -->
+
+    <div class="part_C_q3 part_C_box">
+
+    </div><!-- part_C_q3 -->
+
+
+
+
+<div class="part_C_page_2 part_C_moon part_C_navbar_two">
+  第二頁：追討流程圖
+  <div data-role='collapsible-set'>
+    <div data-role='collapsible' data-collapsed='true'>
+      <h2 class="close"> 報工傷 </h2>
+      <p class="close"> Content  Content  Content </p>
+    </div>
+    <div data-role='collapsible' data-collapsed='true'>
+      <h2 class="close"> 醫療期 </h2>
+      <p class="close"> Content  Content  Content </p>
+    </div>
+    <div data-role='collapsible' data-collapsed='true' class="fun">
+      <h2 class="close"> 如何申請法援 </h2>
+      <p class="close"> Content  Content  Content </p>
+    </div>
+    <div data-role='collapsible' data-collapsed='true'>
+      <h2 class="close"> 判傷 </h2>
+      <p class="close"> Content  Content  Content </p>
+    </div>
+    <div data-role='collapsible' data-collapsed='true'>
+      <h2 class="close"> 唔識搞可以搵邊個 </h2>
+      <p class="close"> Content  Content  Content </p>
+    </div>
+  </div><!-- collapsible-set -->
+</div>  <!-- part_C_page_2 -->
+
+<div class="part_C_page_3 part_C_moon part_C_navbar_three">
+    第三頁：工傷受害者故事、常見賤招及政策倡議（工權會及訪問全集）
+    工亡血債
+    {% include "title_list.html" %}
+</div>  <!-- part_C_page_3 -->
+
+  </div> <!-- end of pages -->
+</div><!-- end of content -->
+</div><!-- end of page_3 -->

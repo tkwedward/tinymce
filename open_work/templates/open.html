@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% load static %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+{% include "script.html" %}
+</head>
+
+<body>
+
+<div id='loading'></div>
+
+
+<div data-role="page">
+    {% include "header.html" %}
+
+<div class="control_bar">
+  <a href="#myPanel" class="ui-btn ui-btn-inline">Open</a>
+  <span class="title"> 勞資糾紛 </span>
+</div>
+<!-- /control_bar -->
+
+
+    <div data-role="content" class="part_A" data-theme="e">
+
+      <div class="part_A_nav" data-role="navbar" data-theme="c">
+        <ul>
+          <li id="part_A_navbar_one" class="highlight"><a href="#" class=" ui-btn-active">遇到問題</a></li>
+          <li id="part_A_navbar_three"><a href="#">追討流程</a></li>
+        </ul>
+      </div><!-- /navbar -->
+
+    <div class="page_A_container_of_four_parts"><!-- container of four parts -->
+    {% include "page_A_form.html" %}
+
+
+    <div class="part_A_page_3 part_A_moon part_A_navbar_three">
+
+      <div data-role='collapsible-set'>
+        <div data-role='collapsible' data-collapsed='true'>
+          <h2 class="close"> 5.1 先自行與老闆討論 </h2>
+          <p class='close'> Content  Content  Content </p>
+        </div>
+        <div data-role='collapsible' data-collapsed='true'>
+          <h2 class='close'> 5.2 爭取不果就致電勞工處落案 </h2>
+          <p class='close'> Content  Content  Content </p>
+        </div>
+        <div data-role='collapsible' data-collapsed='true'>
+          <h2 class='close'> 5.3 調解會會發生乜事，口供紙點寫 </h2>
+          <p class='close'> Content  Content  Content </p>
+        </div>
+        <div data-role='collapsible' data-collapsed='true'>
+          <h2 class='close'> 5.4 調解不果就去勞審處落案 </h2>
+          <p class='close'> Content  Content  Content </p>
+        </div>
+        <div data-role='collapsible' data-collapsed='true'>
+          <h2 class='close'> 5.5 你要準備咩證據，要有咩心理準備  </h2>
+          <p class='close'> Content  Content  Content </p>
+        </div>
+        <div data-role='collapsible' data-collapsed='true'>
+          <h2 class='close'> 5.6 唔識搞可以揾咩人求助 </h2>
+          <p class='close'> Content  Content  Content </p>
+        </div>
+      </div><!-- collapsible-set -->
+
+    </div> <!-- part A page 3 -->
+
+    <div class="part_A_page_4 part_A_moon part_A_navbar_four part_A_box">
+        第四頁：勞法歷史故事，說明法例不是必然如此（龍爺全集）
+    </div> <!-- part A page 4 -->
+  </div> <!-- container of four parts -->
+  </div> <!-- content partA -->
+</div><!-- #page0 -->
+</body>
+</html>

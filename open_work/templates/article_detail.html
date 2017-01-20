@@ -1,0 +1,16 @@
+{% include "script.html" %}
+<div data-role="page">
+<div data-role="content" data-theme="e">
+<div class="article_detail">
+  <div class="back">
+    <a href="javascript:history.back()">返回</a>
+  </div>
+  <div class="title">{{post.job}}</div>
+  <div class="image">
+    <img src="/media/{{post.image}}">
+  </div>
+  <div class="body">{{post.body|safe}}</div>
+</div><!-- article_detail -->
+<a href="javascript:history.back()">返回</a>
+</div><!-- content -->
+</div><!-- page -->

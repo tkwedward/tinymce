@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% load static %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+{% include "script.html" %}
+</head>
+
+<body>
+
+<div id = "mobile_version">
+  <div data-role="page" id = "page0">
+    {% include "banner.html" %}
+
+    {% include "header.html" %}
+
+
+
+
+    <div data-role="content" class="part_A" data-theme="e">
+      <div class="part_A_nav" data-role="navbar" data-theme="c">
+        <ul>
+          <li id="part_A_navbar_one"><a href="#">遇到問題</a></li>
+          <li id="part_A_navbar_two"><a href="#">受害者人數</a></li>
+          <li id="part_A_navbar_three"><a href="#">追討流程</a></li>
+          <li id="part_A_navbar_four"><a href="#">勞法歷史故事</a></li>
+        </ul>
+      </div>
+
+    <div class="page_A_container_of_four_parts"><!-- container of four parts -->
+    {% include "page_A_form.html" %}
+
+
+    <div class="part_A_page_2 part_A_moon part_A_navbar_two part_A_box">
+    你老闆涉嫌違反了的法律如下：
+      <div class="q1">
+        全公司係咪得你一個受害？
+          <button class="yes"> 是 </button>
+          <button class = "no"> 不是 </button>
+      </div>
+    </div> <!-- end of part_A_page_2 -->
+
+
+    <div class="part_A_page_3 part_A_moon part_A_navbar_three">
+
+      <div data-role='collapsible-set'>
+        <div data-role='collapsible' data-collapsed='true'>
+          <h2> 5.1 先自行與老闆討論 </h2>
+          <p> Content  Content  Content </p>
+        </div>
+        <div data-role='collapsible' data-collapsed='true'>
+          <h2> 5.2 爭取不果就致電勞工處落案 </h2>
+          <p> Content  Content  Content </p>
+        </div>
+        <div data-role='collapsible' data-collapsed='true'>
+          <h2> 5.3 調解會會發生乜事，口供紙點寫 </h2>
+          <p> Content  Content  Content </p>
+        </div>
+        <div data-role='collapsible' data-collapsed='true'>
+          <h2> 5.4 調解不果就去勞審處落案 </h2>
+          <p> Content  Content  Content </p>
+        </div>
+        <div data-role='collapsible' data-collapsed='true'>
+          <h2> 5.5 你要準備咩證據，要有咩心理準備  </h2>
+          <p> Content  Content  Content </p>
+        </div>
+        <div data-role='collapsible' data-collapsed='true'>
+          <h2> 5.6 唔識搞可以揾咩人求助 </h2>
+          <p> Content  Content  Content </p>
+        </div>
+      </div><!-- collapsible-set -->
+
+    </div> <!-- part A page 3 -->
+
+    <div class="part_A_page_4 part_A_moon part_A_navbar_four part_A_box">
+        第四頁：勞法歷史故事，說明法例不是必然如此（龍爺全集）
+    </div> <!-- part A page 4 -->
+  </div> <!-- container of four parts -->
+  </div> <!-- content partA -->
+</div><!-- #page0 -->
+</div><!-- mobile version -->
+<script src="{% static 'js/open_work.js' %}"> </script>
+
+</body>
+</html>
